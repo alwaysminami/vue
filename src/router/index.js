@@ -1,5 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import DataBinding from '../views/DataBinding.vue'
+import DataBindingHtml from '../views/DataBindingHtml.vue'
+import DataBindingInputText from '../views/DataBindingInputText.vue'
+import DataBindingInputNumber from '../views/DataBindingInputNumber.vue'
+import DataBindingTextarea from '../views/DataBindingTextarea.vue'
 
 const routes = [
   {
@@ -14,6 +19,31 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  },
+  {
+    path: '/databinding',
+    name: 'DataBinding',
+    component: DataBinding
+  },
+  {
+    path: '/databindinghtml',
+    name: 'DataBindingHtml',
+    component: DataBindingHtml
+  },
+  {
+    path: '/databindinginputtext',
+    name: 'DataBindingInputText',
+    component: DataBindingInputText
+  },
+  {
+    path: '/databindinginputnumber',
+    name: 'DataBindingInputNumber',
+    component: DataBindingInputNumber
+  },
+  {
+    path: '/databindingtextarea',
+    name: 'DataBindingTextarea',
+    component: DataBindingTextarea
   }
 ]
 
