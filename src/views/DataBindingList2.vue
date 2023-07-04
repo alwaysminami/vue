@@ -20,7 +20,6 @@
     </table>
   </div>
 </template>
-
 <script>
 export default {
   data () {
@@ -33,12 +32,11 @@ export default {
   },
   methods: {
     async getList () {
-      this.productList = await this.$api('https://1c5ea9f3-d73f-43bc-bd1d-fc11dfc84eec.mock.pstmn.io/list', 'get')
+      this.productList = await this.$api('https://1c5ea9f3-d73f-43bc-bd1d-fc11dfc84eec.mock.pstmn.io/list', 'GET')
     }
   }
 }
 </script>
-
 <style scoped>
   table {
     font-family: arial, sans-serif;

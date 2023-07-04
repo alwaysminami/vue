@@ -1,12 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/databinding">Data Binding</router-link> |
-    <router-link to="/databindinghtml">Data Binding Html</router-link> |
-    <router-link to="/databindinginputtext">Data Binding InputText</router-link> |
-    <router-link to="/databindinginputnumber">Data Binding InputNumber</router-link> |
-    <router-link to="/databindingtextarea">Data Binding Textarea</router-link> |
-    <router-link to="/databindinglist2">Data Binding List2</router-link>
+    <router-link to="/databinding">Data Binding Test</router-link>
   </nav>
   <router-view/>
 </template>
